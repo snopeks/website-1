@@ -1,0 +1,61 @@
+body{
+  background-color: darkgray;
+}
+#all-content{
+  display: flex;
+}
+#sec1, #sec2{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    background-color: beige;
+}
+#header{
+    background-color: lightgrey;
+    height: 100px;
+}
+.main-content{
+  flex: 200px;
+  padding: 10px;
+  margin: auto;
+
+}
+#sidebar{
+  flex: 50%;
+  width: 30%;
+  background-color: red;
+}
+p {
+  padding: 1em;
+}
+ul{
+  list-style-type: none;
+  margin:  0;
+  padding: 0;
+}
+h1 {
+  font-size: 30px;
+  margin: 2%;
+  float: left;
+}
+
+nav{
+  float: right;
+  padding-top: 2%;
+}
+li{
+  float: left;
+}
+li a{
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+}
+#footer{
+  background-color: darkgrey;
+  width: 100%;
+  height: inherit;
+  position:sticky;
+}
