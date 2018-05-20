@@ -1,19 +1,20 @@
 body{
-  background-color: darkgray;
+  background-color: #B94852;
 }
 #all-content{
   display: flex;
 }
 #sec1, #sec2{
     display: flex;
-    width: 80%; 
+    width: 80%;
     align-items: center;
     flex-flow: column wrap;
-    background-color: gold;
+    background-color: white;
 }
 #header{
     display: flex;
-    background-color: lightgrey;
+    background-color: #4C4342;
+    color: white;
     justify-content: space-between;
     align-items: center;
     height: 100px;
@@ -34,11 +35,13 @@ body{
 .post{
   height: inherit;
   border: 1px solid darkgrey;
+  background-color: #9999B5;
+  border-radius: 2%;
   margin: 2%;
 }
 .post:hover{
-   color: blue;
-   border: 1px solid blue;
+   background-color: #EC824B;
+   border: 1px solid #EC824B;
 }
 
 .post-header{
@@ -57,10 +60,10 @@ form{
 
 }
 #sidebar{
-  background-color: white;
+  background-color: #9999B5;
 }
   #create{
-    width: 80%;
+    width: 50%;
   }
 p {
   padding: 1em;
@@ -91,15 +94,17 @@ li{
 }
 li a{
   display: block;
+  color: white;
   padding: 0.5em;
   text-align: center;
   text-decoration: none;
 }
 a:hover{
-  color: magenta;
+  background-color: #EC824B;
+
 }
 #footer{
-  background-color: darkgrey;
+  background-color: #4C4342;
   width: 100%;
   height: inherit;
   position:sticky;
