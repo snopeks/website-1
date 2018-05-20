@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -22,35 +24,76 @@
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#logout">Logout</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a id="signupLink" href="#signup">Signup</a></li>
+        <li><a id="loginLink" href="#login">Login</a></li>
       </ul>
     </nav>
   </div>
+  <div id="signuplogin"></div>
   <div id="all-content">
     <div id="sec1">
       <h2>Top posts</h2>
       <div class="main-content">
         <div class="post">
           <div class="post-header">
-            <p class="title">Post 1</p>
-            <p class="trend">Trending</p>
+            <div class="imagediv">
+              <img src="https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg">
+            </div>
+            <div>
+              <p class="title">Post 6</p>
+            </div>
+            <div>
+              <p class="trend">Trending</p>
+            </div>
+
           </div>
-          <p>Pellentesque pretium eros eget urna malesuada, vel imperdiet dui bibendum. Phasellus egestas sit amet eros sollicitudin malesuada. Mauris porta dui ipsum, vitae convallis metus dictum id. Vestibulum elementum molestie neque nec aliquet. Vivamus eleifend lectus vitae sapien ullamcorper, eget scelerisque mauris pulvinar. Aenean tincidunt, quam quis tristique aliquam, augue libero lacinia ipsum, ut facilisis nisi justo vel risus. Curabitur urna enim, convallis eu tempor eget, aliquam quis justo. Nunc quis porttitor lacus. In a magna vel metus tincidunt luctus.</p>
+          <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus eros eget ullamcorper bibendum. Nulla varius erat eu dui suscipit tristique. Morbi sollicitudin lacus lorem, eu finibus metus iaculis at. Vivamus sit amet eros vel magna elementum porttitor. Quisque at viverra augue, vitae sodales nisl. Curabitur tellus tellus, egestas vitae feugiat sit amet, hendrerit non ex. Vivamus quis metus quis mauris vehicula interdum. Morbi tincidunt mauris id ante congue, eget maximus tellus facilisis. Etiam ac pharetra ex.</p>
         </div>
         <div class="post">
           <div class="post-header">
-            <p class="title">Post 2</p>
-            <p class="trend">Trending</p>
+            <div class="imagediv">
+              <img src="https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg">
+            </div>
+            <div>
+              <p class="title">Post 6</p>
+            </div>
+            <div>
+              <p class="trend">Trending</p>
+            </div>
+
           </div>
-          <p>Donec enim justo, condimentum vitae ultricies id, placerat eu magna. Cras tristique lacus ante, quis vestibulum metus molestie ac. Nulla vitae libero vel velit egestas pharetra. Mauris ac diam diam. Curabitur efficitur tincidunt neque quis imperdiet. Maecenas ullamcorper posuere libero, eu iaculis sem suscipit et. Maecenas at lacus in magna ultrices luctus. Nam finibus non arcu ac finibus. Nulla eu pharetra lectus. Nullam rhoncus semper massa non tristique. Aliquam erat volutpat.</p>
+          <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus eros eget ullamcorper bibendum. Nulla varius erat eu dui suscipit tristique. Morbi sollicitudin lacus lorem, eu finibus metus iaculis at. Vivamus sit amet eros vel magna elementum porttitor. Quisque at viverra augue, vitae sodales nisl. Curabitur tellus tellus, egestas vitae feugiat sit amet, hendrerit non ex. Vivamus quis metus quis mauris vehicula interdum. Morbi tincidunt mauris id ante congue, eget maximus tellus facilisis. Etiam ac pharetra ex.</p>
         </div>
         <div class="post">
           <div class="post-header">
-            <p class="title">Post 3</p>
-            <p class="trend">Trending</p>
+            <div class="imagediv">
+              <img src="https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg">
+            </div>
+            <div>
+              <p class="title">Post 6</p>
+            </div>
+            <div>
+              <p class="trend">Trending</p>
+            </div>
+
           </div>
-          <p>Cras mattis nibh vitae sapien dictum convallis. Morbi sit amet est et enim maximus vehicula. Morbi cursus turpis nec purus vehicula dictum. Fusce sagittis velit a elit gravida, in volutpat velit pellentesque. Cras id nisl id arcu hendrerit ornare eu sit amet dolor. Donec ut nulla aliquam enim molestie laoreet. Integer nisi erat, laoreet eget ante et, feugiat tempor orci. Fusce maximus a orci at suscipit. Nullam dignissim diam lorem, id cursus velit tristique in.</p>
+          <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus eros eget ullamcorper bibendum. Nulla varius erat eu dui suscipit tristique. Morbi sollicitudin lacus lorem, eu finibus metus iaculis at. Vivamus sit amet eros vel magna elementum porttitor. Quisque at viverra augue, vitae sodales nisl. Curabitur tellus tellus, egestas vitae feugiat sit amet, hendrerit non ex. Vivamus quis metus quis mauris vehicula interdum. Morbi tincidunt mauris id ante congue, eget maximus tellus facilisis. Etiam ac pharetra ex.</p>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <div class="imagediv">
+              <img src="https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg">
+            </div>
+            <div>
+              <p class="title">Post 6</p>
+            </div>
+            <div>
+              <p class="trend">Trending</p>
+            </div>
+
+          </div>
+          <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus eros eget ullamcorper bibendum. Nulla varius erat eu dui suscipit tristique. Morbi sollicitudin lacus lorem, eu finibus metus iaculis at. Vivamus sit amet eros vel magna elementum porttitor. Quisque at viverra augue, vitae sodales nisl. Curabitur tellus tellus, egestas vitae feugiat sit amet, hendrerit non ex. Vivamus quis metus quis mauris vehicula interdum. Morbi tincidunt mauris id ante congue, eget maximus tellus facilisis. Etiam ac pharetra ex.</p>
         </div>
       </div>
     </div>
@@ -59,10 +102,62 @@
       <div class="main-content">
         <div class="post">
           <div class="post-header">
-            <p class="title">Post 4</p>
-            <p class="trend">Trending</p>
+            <div class="imagediv">
+              <img src="https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg">
+            </div>
+            <div>
+              <p class="title">Post 6</p>
+            </div>
+            <div>
+              <p class="trend">Trending</p>
+            </div>
+
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus eros eget ullamcorper bibendum. Nulla varius erat eu dui suscipit tristique. Morbi sollicitudin lacus lorem, eu finibus metus iaculis at. Vivamus sit amet eros vel magna elementum porttitor. Quisque at viverra augue, vitae sodales nisl. Curabitur tellus tellus, egestas vitae feugiat sit amet, hendrerit non ex. Vivamus quis metus quis mauris vehicula interdum. Morbi tincidunt mauris id ante congue, eget maximus tellus facilisis. Etiam ac pharetra ex.</p>
+          <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus eros eget ullamcorper bibendum. Nulla varius erat eu dui suscipit tristique. Morbi sollicitudin lacus lorem, eu finibus metus iaculis at. Vivamus sit amet eros vel magna elementum porttitor. Quisque at viverra augue, vitae sodales nisl. Curabitur tellus tellus, egestas vitae feugiat sit amet, hendrerit non ex. Vivamus quis metus quis mauris vehicula interdum. Morbi tincidunt mauris id ante congue, eget maximus tellus facilisis. Etiam ac pharetra ex.</p>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <div class="imagediv">
+              <img src="https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg">
+            </div>
+            <div>
+              <p class="title">Post 6</p>
+            </div>
+            <div>
+              <p class="trend">Trending</p>
+            </div>
+
+          </div>
+          <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus eros eget ullamcorper bibendum. Nulla varius erat eu dui suscipit tristique. Morbi sollicitudin lacus lorem, eu finibus metus iaculis at. Vivamus sit amet eros vel magna elementum porttitor. Quisque at viverra augue, vitae sodales nisl. Curabitur tellus tellus, egestas vitae feugiat sit amet, hendrerit non ex. Vivamus quis metus quis mauris vehicula interdum. Morbi tincidunt mauris id ante congue, eget maximus tellus facilisis. Etiam ac pharetra ex.</p>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <div class="imagediv">
+              <img src="https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg">
+            </div>
+            <div>
+              <p class="title">Post 6</p>
+            </div>
+            <div>
+              <p class="trend">Trending</p>
+            </div>
+
+          </div>
+          <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus eros eget ullamcorper bibendum. Nulla varius erat eu dui suscipit tristique. Morbi sollicitudin lacus lorem, eu finibus metus iaculis at. Vivamus sit amet eros vel magna elementum porttitor. Quisque at viverra augue, vitae sodales nisl. Curabitur tellus tellus, egestas vitae feugiat sit amet, hendrerit non ex. Vivamus quis metus quis mauris vehicula interdum. Morbi tincidunt mauris id ante congue, eget maximus tellus facilisis. Etiam ac pharetra ex.</p>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <div class="imagediv">
+              <img src="https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg">
+            </div>
+            <div>
+              <p class="title">Post 6</p>
+            </div>
+            <div>
+              <p class="trend">Trending</p>
+            </div>
+          </div>
+          <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus eros eget ullamcorper bibendum. Nulla varius erat eu dui suscipit tristique. Morbi sollicitudin lacus lorem, eu finibus metus iaculis at. Vivamus sit amet eros vel magna elementum porttitor. Quisque at viverra augue, vitae sodales nisl. Curabitur tellus tellus, egestas vitae feugiat sit amet, hendrerit non ex. Vivamus quis metus quis mauris vehicula interdum. Morbi tincidunt mauris id ante congue, eget maximus tellus facilisis. Etiam ac pharetra ex.</p>
         </div>
       </div>
     </div>
