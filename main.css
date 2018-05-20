@@ -6,26 +6,62 @@ body{
 }
 #sec1, #sec2{
     display: flex;
+    width: 80%; 
     align-items: center;
     flex-flow: column wrap;
-    justify-content: space-around;
-    background-color: beige;
+    background-color: gold;
 }
 #header{
+    display: flex;
     background-color: lightgrey;
+    justify-content: space-between;
+    align-items: center;
     height: 100px;
+}
+#logo{
+  /* margin: 1em; */
+  padding: 3%;
+}
+#search{
+  /* margin: 1em; */
+  padding: 3%;
 }
 .main-content{
   flex: 200px;
   padding: 10px;
   margin: auto;
+}
+.post{
+  height: inherit;
+  border: 1px solid darkgrey;
+  margin: 2%;
+}
+.post:hover{
+   color: blue;
+   border: 1px solid blue;
+}
+
+.post-header{
+  display: flex;
+  flex-flow: row wrap;
+}
+.title {
+  font-weight: bold;
+}
+.trend {
+  font-style: italic;
+}
+form{
+  /* flex: 50px; */
+  padding: 1em;
 
 }
 #sidebar{
-  flex: 50%;
-  width: 30%;
-  background-color: red;
+  background-color: white;
 }
+  #create{
+    width: 80%;
+  }
 p {
   padding: 1em;
 }
@@ -35,14 +71,20 @@ ul{
   padding: 0;
 }
 h1 {
-  font-size: 30px;
+  font-size: 35px;
+}
+h2{
+  font-size: 25px;
+  text-align: center;
   margin: 2%;
-  float: left;
+}
+h3{
+  font-size: 20px;
+  margin: 2%;
 }
 
 nav{
-  float: right;
-  padding-top: 2%;
+  padding: 3%;
 }
 li{
   float: left;
@@ -52,6 +94,9 @@ li a{
   padding: 0.5em;
   text-align: center;
   text-decoration: none;
+}
+a:hover{
+  color: magenta;
 }
 #footer{
   background-color: darkgrey;
